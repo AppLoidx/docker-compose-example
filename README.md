@@ -1,7 +1,6 @@
 # Docker compose usage example
-Stack:
-* Java 11 - Spring Boot 2+
-* NGINX image
+
+![](https://i.imgur.com/5BJpbQv.png)
 
 ## Running image
 
