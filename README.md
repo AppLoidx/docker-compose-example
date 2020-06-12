@@ -11,6 +11,10 @@ cd docker-compose-example
 docker-compose up
 ```
 
+See urls:
+- http://localhost/ - for static files
+- http://localhost/api - for api endpoints
+
 ## Images
 
 **NGINX**:
