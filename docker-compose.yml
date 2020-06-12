@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  api:
+    container_name: api
+    build:
+      context: docker-compose-example-api
+      dockerfile: Dockerfile
+    ports:
+    - 3000:8080
+
+  nginx:
+    container_name: nginx-container
+    image: nginx:latest
+    ports:
+    - 80:80
+    - 443:443
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./docker-compose-example-web:/etc/nginx/html
+    depends_on:
+      - api
